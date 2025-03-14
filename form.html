@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pashupati Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <h1 class="logo">पशुपति स्टोर</h1>
+                <h1 class="logo">Pashupati Store</h1>
+            </a>
+            <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+        </div>
+    </header>
+
+    <main class="form-section">
+        <div class="container">
+            <div class="form-message">
+                <h2>धन्यवाद! हाम्रो वेबसाइट अहिले निर्माणाधीन छ</h2>
+                <h2>Thank you! Our website is currently under construction</h2>
+                <p>कृपया तलको फारम भर्नुहोस् र हामी तपाईंसँग चाँडै सम्पर्क गर्नेछौं</p>
+                <p>Please fill the form below and we'll contact you soon</p>
+            </div>
+
+            <form class="contact-form" action="https://formspree.io/f/xdkekoep" method="POST">
+                <div class="form-group">
+                    <label for="name">नाम | Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">इमेल | Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">फोन नम्बर | Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">सन्देश | Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="preference">सम्पर्क विधि | Preferred Contact Method:</label>
+                    <select id="preference" name="preference">
+                        <option value="email">इमेल | Email</option>
+                        <option value="phone">फोन | Phone</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="cta-button">पेश गर्नुहोस् | Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
